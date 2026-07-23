@@ -44,6 +44,9 @@ jobs:
       - name: Install frontend dependencies
         run: npm ci
 
+      - name: Verify Windows native dependencies
+        run: node -e "console.log('Rollup:', require.resolve('@rollup/rollup-win32-x64-msvc')); console.log('LightningCSS:', require.resolve('lightningcss-win32-x64-msvc'));"
+
       - name: Run automated tests
         run: npm test
 
