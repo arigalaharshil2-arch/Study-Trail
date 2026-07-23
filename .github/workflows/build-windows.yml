@@ -29,6 +29,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Setup Rust toolchain
         uses: dtolnay/rust-toolchain@stable
@@ -41,7 +42,7 @@ jobs:
           workspaces: ./src-tauri
 
       - name: Install frontend dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run automated tests
         run: npm test
@@ -52,6 +53,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           projectPath: .
+          tauriScript: "npm run tauri"
           tagName: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
           releaseName: ${{ startsWith(github.ref, 'refs/tags/v') && format('Study Trail {0}', github.ref_name) || '' }}
           releaseBody: ${{ startsWith(github.ref, 'refs/tags/v') && format('Study Trail Desktop Edition {0} for Windows.', github.ref_name) || '' }}
