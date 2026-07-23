@@ -50,6 +50,9 @@ jobs:
       - name: Run automated tests
         run: npm test
 
+      - name: Preflight check Tauri packaging assets
+        run: npm run tauri:preflight
+
       - name: Build Tauri 2 Application
         uses: tauri-apps/tauri-action@v0
         env:

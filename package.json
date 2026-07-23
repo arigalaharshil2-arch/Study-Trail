@@ -10,7 +10,8 @@
     "lint": "vite build",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
-    "tauri:build": "tauri build"
+    "tauri:build": "tauri build",
+    "tauri:preflight": "node scripts/tauri-preflight.cjs"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
