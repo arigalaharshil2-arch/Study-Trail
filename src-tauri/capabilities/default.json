@@ -9,11 +9,12 @@
     "shell:default",
     "dialog:allow-open",
     "dialog:default",
-    "fs:allow-read-text",
-    "fs:allow-write-text",
+    "fs:allow-read-text-file",
+    "fs:allow-write-text-file",
     "fs:allow-read-file",
     "fs:allow-write-file",
     "fs:allow-mkdir",
+    "fs:allow-exists",
     "fs:default"
   ]
 }
