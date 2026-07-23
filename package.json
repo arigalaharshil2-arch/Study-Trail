@@ -83,6 +83,13 @@
     "vite": "6.3.5",
     "vitest": "^4.1.10"
   },
+  "optionalDependencies": {
+    "@esbuild/win32-x64": "0.25.12",
+    "@rollup/rollup-win32-x64-msvc": "4.62.2",
+    "@tailwindcss/oxide-win32-x64-msvc": "4.1.12",
+    "@tauri-apps/cli-win32-x64-msvc": "2.11.4",
+    "@typescript/typescript-win32-x64": "7.0.2"
+  },
   "peerDependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1"
