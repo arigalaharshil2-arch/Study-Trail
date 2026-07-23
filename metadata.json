@@ -1,0 +1,8 @@
+{
+  "name": "Study Trail",
+  "description": "Track your syllabus progress with a premium dashboard designed for college students, enhancing productivity and personal organization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
