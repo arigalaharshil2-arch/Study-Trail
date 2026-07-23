@@ -1,0 +1,8 @@
+# Treat binary assets as raw binary to prevent text/UTF-8 mangling
+*.ico binary
+*.icns binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
